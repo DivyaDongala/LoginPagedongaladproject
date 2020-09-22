@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--to see the screen in ladscape mode-->
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".Register">
+    <!--to declare a register text field to represent register page-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true"
+       android:textColorHighlight="@color/colorPrimaryDark"
+        android:layout_marginTop="45dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         <!--attribute declaration for first name-->
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="395dp"
+                android:layout_height="59dp"
+                android:hint="First Name"
+                android:textColorHint="#ff0000"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--attribute declaration for family name-->
+            <EditText
+                android:id="@+id/familyname"
+                android:layout_width="397dp"
+                android:layout_height="37dp"
+                android:hint="Family Name"
+                android:textColorHint="#ff0000"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--attribute declaration for date of birth-->
+            <EditText
+                android:id="@+id/dob"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ff0000"
+                android:hint="Date of Birth (MM/DD/YYYY)" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--attribute declaration for email id-->
+            <EditText
+                android:id="@+id/emailid"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:textColorHint="#ff0000"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--attribute declaration for password-->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="#ff0000"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--attribute declaration for button REGISTER-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/rstrbtn">
+        </Button>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

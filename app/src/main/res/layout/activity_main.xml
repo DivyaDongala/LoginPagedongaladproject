@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--to see the result in landscape mode-->
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Login">
+     <!--below are attributes for the text view of my project name-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="My mini project"
+        android:textColor="#4527A0"
+        android:textSize="35dp"
+        android:textStyle="normal|bold|italic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+     <!--below are attributes for user name-->
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="395dp"
+            android:layout_height="59dp"
+            android:hint="Username"
+            android:textColorHint="#ff0000"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+         <!--below are the attributes for password-->
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="397dp"
+                android:layout_height="37dp"
+                android:hint="password"
+                android:textColorHint="#ff0000"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!--Login button attribute declaration-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:id="@+id/login">
+        </Button>
+        <!-- register button attribute declaration-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/register">
+        </Button>
+    </LinearLayout>
+   <!--insert image from the local drive for background-->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginRight="118dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/welcome" />
+
+</RelativeLayout>
+</ScrollView>
